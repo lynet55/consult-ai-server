@@ -29,11 +29,6 @@ GET /konsulenter
 ```
 Returns a list of all consultants with their skills and workload.
 
-### Get Consultant by ID
-```
-GET /konsulenter/{consultant_id}
-```
-Returns details for a specific consultant by their ID.
 
 ## Example Response
 ```json
