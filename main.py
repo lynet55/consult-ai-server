@@ -70,11 +70,3 @@ consultants = [
 def get_all_consultants():
     """Get all consultants"""
     return consultants
-
-@app.get("/konsulenter/{consultant_id}")
-def get_consultant_by_id(consultant_id: str):
-    """Get a specific consultant by ID"""
-    for consultant in consultants:
-        if consultant["id"] == consultant_id:
-            return consultant
-    raise HTTPException(status_code=404, detail="Konsulent ikke funnet")
